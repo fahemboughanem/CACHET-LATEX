@@ -1,0 +1,63 @@
+\documentclass[12pt]{article}
+\usepackage{tikz}
+\usetikzlibrary{decorations.text,math}
+\usetikzlibrary{decorations.pathmorphing}
+\usepackage{amsmath,amsfonts,amssymb,mathrsfs} 
+\begin{document}
+\tikzpicture
+\draw[red!50!black](10:2.5cm)--(170:2.5cm)arc(170:10:2.5cm);
+\draw[red!50!black](-170:2.5cm)--(-10:2.5cm)arc(-10:-170:2.5cm);
+\draw[double,red!50!black](17:1.5cm)arc(17:163:1.5cm);
+\draw[double,red!50!black](-17:1.5cm)arc(-17:-163:1.5cm);
+\path[decorate,decoration={ text along path,text={|\color{red!50!black}|
+write here name of lycee ||},
+text align={align=left}}](-160:2cm)arc(-160:0:2cm);
+\path[decorate,decoration={ text along path,text={|\color{red!50!black}|
+{$\star$} prof naam mohamed
+{$\star$}||},
+text align={align=left}}]
+(160:1.9cm)arc(160:0:1.9cm);
+\path(0:2.5cm)--(180:2.5cm)node[midway,red!50!black](A){MATH\'{E}MATIQUES};
+\node[scale=1,red!50!black] at ([yshift=4mm]A.north){\LaTeX};
+\node[scale=1,red!50!black] at ([yshift=-4mm]A.south){ALGERIA};
+\endtikzpicture\hfill
+\tikzpicture
+\draw[red!50!black](170:2.5cm)arc(170:10:2.5cm);
+\draw[red!50!black](-10:2.5cm)arc(-10:-170:2.5cm);
+\draw[red!50!black,thick](9:2.7cm)--(171:2.7cm);
+\draw[red!50!black,thick](-171:2.7cm)--(-9:2.7cm);
+\draw[double,red!50!black](17:1.5cm)arc(17:163:1.5cm);
+\draw[double,red!50!black](-17:1.5cm)arc(-17:-163:1.5cm);
+\path[decorate,decoration={ text along path,text={|\color{red!50!black}|
+write here name of lycee ||},
+text align={align=left}}](-160:2cm)arc(-160:0:2cm);
+\path[decorate,decoration={ text along path,text={|\color{red!50!black}|
+{$\star$} prof naam mohamed
+{$\star$}||},
+text align={align=left}}]
+(160:1.9cm)arc(160:0:1.9cm);
+\path(0:2.5cm)--(180:2.5cm)node[midway,red!50!black](A){MATH\'{E}MATIQUES};
+\node[scale=1,red!50!black] at ([yshift=4mm]A.north){\LaTeX};
+\node[scale=1,red!50!black] at ([yshift=-4mm]A.south){ALGERIA};
+\endtikzpicture
+%change opacity of logo %opacity=0.5%
+\tikzpicture[opacity=0.5]
+\draw[red!50!black](170:2.5cm)arc(170:10:2.5cm);
+\draw[red!50!black](-10:2.5cm)arc(-10:-170:2.5cm);
+\draw[red!50!black,thick](9:2.7cm)--(171:2.7cm);
+\draw[red!50!black,thick](-171:2.7cm)--(-9:2.7cm);
+\draw[double,red!50!black](17:1.5cm)arc(17:163:1.5cm);
+\draw[double,red!50!black](-17:1.5cm)arc(-17:-163:1.5cm);
+\path[decorate,decoration={ text along path,text={|\color{red!50!black}|
+write here name of lycee ||},
+text align={align=left}}](-160:2cm)arc(-160:0:2cm);
+\path[decorate,decoration={ text along path,text={|\color{red!50!black}|
+{$\star$} prof naam mohamed
+{$\star$}||},
+text align={align=left}}]
+(160:1.9cm)arc(160:0:1.9cm);
+\path(0:2.5cm)--(180:2.5cm)node[midway,red!50!black](A){MATH\'{E}MATIQUES};
+\node[scale=1,red!50!black] at ([yshift=4mm]A.north){\LaTeX};
+\node[scale=1,red!50!black] at ([yshift=-4mm]A.south){ALGERIA};
+\endtikzpicture
+\end{document}
